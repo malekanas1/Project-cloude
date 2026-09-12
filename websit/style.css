@@ -1,0 +1,257 @@
+/* =========================
+   الإعدادات العامة
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Tahoma, sans-serif;
+    background-color: #f4f6f9;
+    color: #1f2937;
+    direction: rtl;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* =========================
+   الشريط العلوي
+========================= */
+
+.navbar {
+    background-color: #1e3a5f;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+}
+
+nav a {
+    color: #e5e7eb;
+    text-decoration: none;
+
+    padding: 10px 18px;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #2563eb;
+    color: white;
+}
+
+
+/* =========================
+   المحتوى الرئيسي
+========================= */
+
+.main-content {
+    padding: 55px 0;
+}
+
+
+/* =========================
+   الترحيب
+========================= */
+
+.welcome {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.welcome h1 {
+    color: #1e3a5f;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.welcome p {
+    color: #6b7280;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   البطاقات
+========================= */
+
+.dashboard {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+
+/* أيقونة البطاقة */
+
+.card-icon {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    color: #1e3a5f;
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    min-height: 48px;
+
+    margin-bottom: 22px;
+}
+
+
+/* زر البطاقة */
+
+.card-button {
+    display: inline-block;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 11px 28px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.card-button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =========================
+   التذييل
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+
+    color: #6b7280;
+
+    font-size: 13px;
+
+    border-top: 1px solid #e5e7eb;
+
+    background-color: white;
+}
+
+
+/* =========================
+   الشاشات الصغيرة
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 15px 0;
+    }
+
+    .navbar-content {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    .main-content {
+        padding: 35px 0;
+    }
+
+    .welcome h1 {
+        font-size: 24px;
+    }
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}
+
+
